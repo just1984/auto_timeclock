@@ -1,7 +1,7 @@
-#auto_timeclock
-##Code that auto commits your project every hour and allows for empty commits.
+# auto_timeclock
+## Code that auto commits your project every hour and allows for empty commits.
 
-##How to use
+## How to use
 To run the script, you need to do the following:
 
 1. Ensure that the path to your project in the xx_pfadzumprojekt.txt file is correct. The xx_pfadzumprojekt.txt file must be in the same directory as your xx_syntax_commit.sh file.
