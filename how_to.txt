@@ -1,8 +1,11 @@
 Um das Script auszufuehren musst du folgendes tun:
 
-1. Öffne die Datei: xx_sytax_commit.sh
-2. Ändere den Pfad zu dem Pfad auf dem dein Projekt liegt
-3. Das lokale Projekt muss ein Remote auf Githib haben (aber das hat es, wenn du es via VCS geladen hast)
-4. Öffne die Datei: GO_sytax_commit.sh
-5. Ändere auch hier die Pfade
-6. Starte das Script morgens mit diesem Befehl im Terminal: start_script.sh
+1. Stelle sicher, dass der Pfad zu deinem Projekt in der xx_pfadzumprojekt.txt Datei korrekt ist. Die xx_pfadzumprojekt.txt Datei muss sich im selben Verzeichnis befinden wie deine xx_sytax_commit.sh und GO_sytax_commit.sh Dateien.
+
+2. Stelle sicher, dass das lokale Projekt ein Remote auf GitHub hat (aber das hat es, wenn du es via VCS geladen hast).
+
+3. Starte das Skript morgens mit diesem Befehl im Terminal:
+Navigiere zu dem Ordner in dem die Scripte gespeichert sind:
+cd /pfad/zu/deinem/startskript/
+GO_sytax_commit.sh
+

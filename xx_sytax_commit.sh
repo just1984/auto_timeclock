@@ -1,6 +1,9 @@
 #!/bin/bash
 
-cd /pfad/zu/deinem/projekt
+# Lese den Pfad aus der Konfigurationsdatei
+project_path=$(cat xx_pfadzumprojekt.txt)
+
+cd $project_path
 
 while true; do
     hour=$(date +%H)
