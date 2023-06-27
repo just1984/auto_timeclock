@@ -1,20 +1,19 @@
-# auto_timeclock
-Code that auto commits your Project at 9am and 4pm. 
+#auto_timeclock
+##Code that auto commits your project every hour and allows for empty commits.
 
-## how to
-Um das Script auszufuehren musst du folgendes tun:
+##How to use
+To run the script, you need to do the following:
 
-1. Stelle sicher, dass der Pfad zu deinem Projekt in der xx_pfadzumprojekt.txt Datei korrekt ist. Die xx_pfadzumprojekt.txt Datei muss sich im selben Verzeichnis befinden wie deine xx_sytax_commit.sh und GO_sytax_commit.sh Dateien.
+1. Ensure that the path to your project in the xx_pfadzumprojekt.txt file is correct. The xx_pfadzumprojekt.txt file must be in the same directory as your xx_syntax_commit.sh file.
+   
+3. Ensure that your local project has a remote on GitHub (it will, if you loaded it via VCS).
 
-2. Stelle sicher, dass das lokale Projekt ein Remote auf GitHub hat (aber das hat es, wenn du es via VCS geladen hast).
+4. Run the script with this command in the terminal:
 
-3. Starte das Skript morgens mit diesem Befehl im Terminal:
+Navigate to the folder where the scripts are saved:
 
-Navigiere zu dem Ordner in dem die Scripte gespeichert sind:<br> 
-Eingabe in das Terminal:<p> 
-
-cd /pfad/zu/deinem/startskript/<br> 
-chmod +x xx_sytax_commit.sh<br> 
+cd /path/to/your/startscript/
+chmod +x xx_syntax_commit.sh
 sudo ./xx_syntax_commit.sh
 
-
+This script will now auto commit your project every hour. Note that it will create a commit even if there are no changes to the project, and these commits will include a time stamp and a running number.
