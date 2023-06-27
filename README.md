@@ -10,9 +10,11 @@ Um das Script auszufuehren musst du folgendes tun:
 
 3. Starte das Skript morgens mit diesem Befehl im Terminal:
 
-Navigiere zu dem Ordner in dem die Scripte gespeichert sind:
-EIngabe: cd /pfad/zu/deinem/startskript/
+Navigiere zu dem Ordner in dem die Scripte gespeichert sind:<br> 
+Eingabe in das Terminal:<p> 
 
-Eingabe: GO_sytax_commit.sh
+cd /pfad/zu/deinem/startskript/<br> 
+chmod +x xx_sytax_commit.sh<br> 
+sudo ./xx_syntax_commit.sh
 
 
