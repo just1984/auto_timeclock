@@ -10,10 +10,10 @@ To run the script, you need to do the following:
 
 4. Run the script with this command in the terminal:
 
-Navigate to the folder where the scripts are saved:
+Navigate to the folder where the scripts are saved:<p>
 
-cd /path/to/your/startscript/
-chmod +x xx_syntax_commit.sh
+cd /path/to/your/startscript/<br>
+chmod +x xx_syntax_commit.sh<br>
 sudo ./xx_syntax_commit.sh
 
 This script will now auto commit your project every hour. Note that it will create a commit even if there are no changes to the project, and these commits will include a time stamp and a running number.
