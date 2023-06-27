@@ -7,5 +7,5 @@ Um das Script auszufuehren musst du folgendes tun:
 3. Starte das Skript morgens mit diesem Befehl im Terminal:
 Navigiere zu dem Ordner in dem die Scripte gespeichert sind:
 cd /pfad/zu/deinem/startskript/
-GO_sytax_commit.sh
-
+chmod +x xx_sytax_commit.sh
+sudo ./xx_syntax_commit.sh
