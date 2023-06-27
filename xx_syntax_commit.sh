@@ -23,27 +23,25 @@ fi
 
 while true; do
     hour=$(date +%H)
-    minute=$(date +%M)
 
     echo "Aktuelle Uhrzeit: $(date)"
 
-    # Führe die Befehle aus, wenn die Minute kleiner als 10 ist (also zu Beginn jeder Stunde)
-    if [ $minute -lt 10 ]; then
-        echo "Ausführung des stündlichen git-Befehls..."
-        git add .
-        let "laufnummer++"
-        git commit --allow-empty -m "Commit um $hour Uhr, Laufnummer $laufnummer"
-        git push
-        if [ $? -ne 0 ]; then
-            echo "Ein Fehler ist aufgetreten bei der Ausführung des stündlichen git-Befehls"
-            exit 1
-        fi
-        # Warte 10 Minuten nach dem Commit, um mehrfache Commits innerhalb des 10-Minuten-Fensters zu vermeiden
-        sleep 600
-    else
-        echo "Keine Aktion, warte auf den nächsten Zeitfenster..."
+    # Führe die Befehle zu Beginn jeder Stunde aus
+    echo "Ausführung des stündlichen git-Befehls..."
+    git add .
+    let "laufnummer++"
+    git commit --allow-empty -m "Commit um $hour Uhr, Laufnummer $laufnummer"
+    git push
+    if [ $? -ne 0 ]; then
+        echo "Ein Fehler ist aufgetreten bei der Ausführung des stündlichen git-Befehls"
+        exit 1
     fi
 
-    # Warte 1 Minute
-    sleep 60
+    # Warte 1 Stunde und zeige einen Countdown-Timer an
+    secs=3600
+    while [ $secs -gt 0 ]; do
+        echo -ne "Wartezeit bis zum nächsten Commit: $secs\033[0K\r"
+        sleep 1
+        : $((secs--))
+    done
 done
