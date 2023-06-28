@@ -1,19 +1,24 @@
-# auto_timeclock
-## Code that auto commits your project every hour and allows for empty commits.
+# Auto Timeclock
+If your school or employer requires evidence of your activity on GitHub, the Auto Timeclock tool is perfect for you! It automates the process of making commits to your projects by creating a commit every hour, tracking your activity without the hassle. With this tool, you can focus on your work or learning while letting automation handle the rest. Don't hesitate to send in Issues or Pull Requests! Happy learning!
 
-## How to use
-To run the script, you need to do the following:
+## Features
+- Makes a commit every hour.
+- Allows for empty commits (creates a commit even if there are no changes).
+- Each commit includes a timestamp and a running number.
 
-1. Ensure that the path to your project in the xx_pfadzumprojekt.txt file is correct. The xx_pfadzumprojekt.txt file must be in the same directory as your xx_syntax_commit.sh file.
-   
-3. Ensure that your local project has a remote on GitHub (it will, if you loaded it via VCS).
+## How to Use
+### 1. Make sure the path to your project is correctly set in the `xx_pfadzumprojekt.txt` file. This file should be located in the same directory as your `xx_syntax_commit.sh` file.
 
-4. Run the script with this command in the terminal:
+### 2. Make sure your local project has a remote repository on GitHub. If you loaded your project using a Version Control System (VCS), it will already have a remote set up.
 
-Navigate to the folder where the scripts are saved:<p>
+### 3. Run the script with the following command in your terminal:
 
-cd /path/to/your/startscript/<br>
-chmod +x xx_syntax_commit.sh<br>
+cd /path/to/your/startscript/
+chmod +x xx_syntax_commit.sh
 sudo ./xx_syntax_commit.sh
 
-This script will now auto commit your project every hour. Note that it will create a commit even if there are no changes to the project, and these commits will include a time stamp and a running number.
+This script will now auto-commit to your project every hour, and it will create a commit even if there are no changes to the project. These commits will include a timestamp and a running number.
+
+We hope this tool will make your learning journey smoother by taking care of the commit process. You can now focus on what truly matters: Learning and growing!
+
+#HappyCoding #SyntaxInstitute #GitHub #Automation #Learning
