@@ -7,11 +7,11 @@ If your school or employer requires evidence of your activity on GitHub, the Aut
 - Each commit includes a timestamp and a running number.
 
 ## How to Use
-### 1. Make sure the path to your project is correctly set in the `xx_pfadzumprojekt.txt` file. This file should be located in the same directory as your `xx_syntax_commit.sh` file.
+1. Make sure the path to your project is correctly set in the `xx_pfadzumprojekt.txt` file. This file should be located in the same directory as your `xx_syntax_commit.sh` file.
 
-### 2. Make sure your local project has a remote repository on GitHub. If you loaded your project using a Version Control System (VCS), it will already have a remote set up.
+2. Make sure your local project has a remote repository on GitHub. If you loaded your project using a Version Control System (VCS), it will already have a remote set up.
 
-### 3. Run the script with the following command in your terminal:
+3. Run the script with the following command in your terminal:
 
 cd /path/to/your/startscript/
 chmod +x xx_syntax_commit.sh
@@ -19,6 +19,6 @@ sudo ./xx_syntax_commit.sh
 
 This script will now auto-commit to your project every hour, and it will create a commit even if there are no changes to the project. These commits will include a timestamp and a running number.
 
-We hope this tool will make your learning journey smoother by taking care of the commit process. You can now focus on what truly matters: Learning and growing!
+I hope this tool will make your learning journey smoother by taking care of the commit process. You can now focus on what truly matters: Learning and growing!
 
 #HappyCoding #SyntaxInstitute #GitHub #Automation #Learning
