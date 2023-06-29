@@ -21,6 +21,9 @@ else
     exit 1
 fi
 
+# Ändere die Berechtigungen der Log-Dateien
+sudo chmod -R 777 .git/logs
+
 while true; do
     hour=$(date +%H)
 
