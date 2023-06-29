@@ -15,7 +15,7 @@ If your school or employer requires evidence of your activity on GitHub, the Aut
 
 cd /path/to/your/startscript/<br>
 chmod +x xx_syntax_commit.sh<br>
-sudo ./xx_syntax_commit.sh<p>
+./xx_syntax_commit.sh<p>
 
 This script will now auto-commit to your project every hour, and it will create a commit even if there are no changes to the project. These commits will include a timestamp and a running number.
 
