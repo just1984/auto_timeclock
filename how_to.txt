@@ -8,4 +8,4 @@ Um das Script auszufuehren musst du folgendes tun:
 Navigiere zu dem Ordner in dem die Scripte gespeichert sind:
 cd /pfad/zu/deinem/startskript/
 chmod +x xx_sytax_commit.sh
-sudo ./xx_syntax_commit.sh
+./xx_syntax_commit.sh
