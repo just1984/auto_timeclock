@@ -7,15 +7,15 @@ If your school or employer requires evidence of your activity on GitHub, the Aut
 - Each commit includes a timestamp and a running number.
 
 ## How to Use
-1. Make sure the path to your project is correctly set in the `xx_pfadzumprojekt.txt` file. This file should be located in the same directory as your `xx_syntax_commit.sh` file.
+1. Make sure the path to your project is correctly set in the `xx_pfadzumprojekt.txt` file. This file should be located in the same directory as your `xx_autoclock.sh` file.
 
 2. Make sure your local project has a remote repository on GitHub. If you loaded your project using a Version Control System (VCS), it will already have a remote set up.
 
 3. Run the script with the following command in your terminal:
 
 cd /path/to/your/startscript/<br>
-chmod +x xx_syntax_commit.sh<br>
-./xx_syntax_commit.sh<p>
+chmod +x xx_autoclock.sh<br>
+./xx_autoclock.sh<p>
 
 This script will now auto-commit to your project every hour, and it will create a commit even if there are no changes to the project. These commits will include a timestamp and a running number.
 
