@@ -19,7 +19,7 @@ fi
 
 cd $project_path
 
-chmod -R 777 .
+sudo chmod -R 777 .git
 
 if [ ! -d ".git" ]; then
     echo "Error: Directory $project_path is not a Git repository."
