@@ -13,9 +13,9 @@ If your school or employer requires evidence of your activity on GitHub, the Aut
 4. Open the `xx_autoclock.sh` script file and adjust the time interval between commits by uncommenting the corresponding line (instructions are in the script file).
 5. Run the script with the following command in your terminal:
 
-cd /path/to/your/startscript/
-chmod +x xx_autoclock.sh
-./xx_autoclock.sh
+```cd /path/to/your/startscript/```  
+```chmod +x xx_autoclock.sh```
+```./xx_autoclock.sh```
 
 This script will now auto-commit to your project, and it will create a commit even if there are no changes to the project. These commits will include a timestamp and a sequence number.
 
