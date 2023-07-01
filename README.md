@@ -1,4 +1,4 @@
-# Auto Timeclock
+# Github Auto Timeclock
 If your school or employer requires evidence of your activity on GitHub, the Auto Timeclock tool is perfect for you! It automates the process of making commits to your projects by creating a commit at a certain time (or random times), tracking your activity without the hassle. With this tool, you can focus on your work or learning while letting automation handle the rest. Don't hesitate to send in Issues or Pull Requests! Happy learning!
 
 ## Features
