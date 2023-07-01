@@ -28,21 +28,6 @@ fi
 
 laufnummer=0
 
-echo "Executing initial git command..."
-git add .
-let "laufnummer++"
-git commit --allow-empty -m "Initial Commit, sequence number $laufnummer"
-git push
-if [ $? -eq 0 ]; then
-    echo "The initial git command was successfully executed"
-else
-    echo "An error occurred when executing the initial git command"
-    exit 1
-fi
-
-# Change permissions of log files (commented out)
-# sudo chmod -R 777 .git/logs
-
 # Configure the wait time in seconds between commits.
 # You can uncomment one of the following options:
 
@@ -62,26 +47,22 @@ fi
 secs=$((RANDOM % 7200))
 
 while true; do
-    hour=$(date +%H)
-
-    echo "Current time: $(date)"
-
-    # Execute the commands at the beginning of each hour
-    echo "Executing hourly git command..."
+    echo "Executing git commands.."
     git pull
     git add .
     let "laufnummer++"
-    git commit --allow-empty -m "Commit at $hour, Run number $laufnummer"
+    git commit --allow-empty -m "Commit at $(date), sequence number $laufnummer"
     git push
     if [ $? -ne 0 ]; then
-        echo "An error occurred when executing the hourly git command"
+        echo "An error occurred when executing the git command"
         exit 1
     fi
 
-    # Wait for the specified time and display a countdown timer
     while [ $secs -gt 0 ]; do
         echo -ne "Waiting until next commit: $secs\033[0K\r"
         sleep 1
         : $((secs--))
     done
+
+    secs=$((RANDOM % 7200))
 done
