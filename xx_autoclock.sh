@@ -47,12 +47,33 @@ function execute_git_commands() {
     echo $laufnummer
 }
 
+function calculate_secs() {
+    # Random-Option (voreingestellt)
+    local secs=$((RANDOM % 7200))
+
+    # Entfernen Sie die Ausklammerung, um eine andere Option zu wählen:
+
+    # Option für 1 Stunde
+    #secs=3600
+
+    # Option für 2 Stunden
+    #secs=7200
+
+    # Option für 4 Stunden
+    #secs=14400
+
+    # Option für 12 Stunden
+    #secs=43200
+
+    echo $secs
+}
+
 project_path=$(read_project_path)
 check_git_repo $project_path
 cd $project_path
 sudo chmod -R 777 .git
 laufnummer=0
-secs=$((RANDOM % 7200))
+secs=$(calculate_secs)
 
 while true; do
     echo "Executing git commands.."
@@ -64,5 +85,5 @@ while true; do
         : $((secs--))
     done
 
-    secs=$((RANDOM % 7200))
+    secs=$(calculate_secs)
 done
